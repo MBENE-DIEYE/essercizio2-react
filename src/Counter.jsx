@@ -1,4 +1,4 @@
-import { useState } from "react"
+// import { useState } from "react"
 
 // const Counter = () =>{
 
@@ -19,4 +19,4 @@ import { useState } from "react"
 //     )
 //   }
 
-  export default Counter
+//   export default Counter

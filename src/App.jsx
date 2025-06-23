@@ -1,4 +1,9 @@
+
 import { useEffect, useState } from "react"
+
+const TextInput = () =>{
+
+}
 
 const App = () => {
  
@@ -23,13 +28,14 @@ const App = () => {
      useEffect(() => {
       console.log("effect 1")
      })
-     
+
      useEffect(() => {
       console.log("effect 2")
      }, [counter])
  
      return(
          <>
+         <TextInput/>
          <div>{"Count : 0"}</div>
          <button onClick={handleclick}>CLICK</button>
          <button onClick={handleclickerDecrementa}>CLICKER</button>
