@@ -1,9 +1,6 @@
 
 import { useEffect, useState } from "react"
 
-const TextInput = () =>{
-
-}
 
 const App = () => {
  
