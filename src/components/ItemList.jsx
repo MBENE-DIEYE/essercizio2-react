@@ -1,11 +1,13 @@
-const array = [elemento1,elemento2,elemento3]
-const ItemList = (array) =>{
+
+const ItemList = ({array}) =>{
     return (
         <>
         <ul>
-            <li>elemento1</li>
-            <li>elemento2</li>
-            <li>elemento3</li>
+            {
+                array.map((element,index) =>{
+                    <li key={index}>{element}</li>
+                })
+            }
         </ul>
         </>
     )

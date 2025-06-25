@@ -3,11 +3,14 @@ import TextInput from "./components/TextInput"
 import { useEffect, useState } from "react"
 import UncontrolledInput from "./components/UncontrolledInput"
 import ItemList from "./components/ItemList"
+import Cards from "./components/Cards"
 // import Counter from "./Counter"
 
 
 const App = () => {
- 
+
+    const arrayElemento =["elemento1","elemeto2","elemeto3"]
+
      const [counter , setCounter] = useState(0)
      const handleclick = () =>{
          setCounter((_counter) =>{
@@ -40,7 +43,8 @@ const App = () => {
         <LoginForme/>
         {/* <Counter/> */}
         <UncontrolledInput/>
-        <ItemList/>
+        <ItemList array={arrayElemento}/>
+        <Cards/>
          <div>{"Count : 0"}</div>
          <button onClick={handleclick}>CLICK</button>
          <button onClick={handleclickerDecrementa}>CLICKER</button>
