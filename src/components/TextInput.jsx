@@ -1,9 +1,14 @@
+import { useState } from "react"
+
 const TextInput = () =>{
 
+const [input, setInput] = useState()
     return(
         <>
-        <label htmlFor="name">name</label>
+       <form >
+         <label htmlFor="name">name</label>
         <input type="text" id="name" name="name" />
+       </form>
         </>
     )
 }

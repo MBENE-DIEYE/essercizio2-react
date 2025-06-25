@@ -1,5 +1,8 @@
-
+import LoginForme from "./components/loginForm"
+import TextInput from "./components/TextInput"
 import { useEffect, useState } from "react"
+import UncontrolledInput from "./components/UncontrolledInput"
+// import Counter from "./Counter"
 
 
 const App = () => {
@@ -33,6 +36,9 @@ const App = () => {
      return(
          <>
          <TextInput/>
+        <LoginForme/>
+        {/* <Counter/> */}
+        <UncontrolledInput/>
          <div>{"Count : 0"}</div>
          <button onClick={handleclick}>CLICK</button>
          <button onClick={handleclickerDecrementa}>CLICKER</button>
