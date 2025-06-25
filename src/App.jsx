@@ -44,7 +44,10 @@ const App = () => {
         {/* <Counter/> */}
         <UncontrolledInput/>
         <ItemList array={arrayElemento}/>
-        <Cards/>
+        <Cards>
+            <h1>titolo</h1>
+            <p>contenuto del card</p>
+        </Cards>
          <div>{"Count : 0"}</div>
          <button onClick={handleclick}>CLICK</button>
          <button onClick={handleclickerDecrementa}>CLICKER</button>

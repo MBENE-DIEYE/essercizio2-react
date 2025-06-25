@@ -1,6 +1,4 @@
-import { Children } from "react"
-
-const Cards = () =>{
+const Cards = ({Children}) =>{
     return (
         <>
         <div className="card">{Children}</div>
