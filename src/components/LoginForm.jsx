@@ -6,17 +6,18 @@ const LoginForme = () =>{
     const [password, setPassword] = useState()
 
    
-    const handleclick = () =>{
-        return alert(username ,password)
+    const handleclick = (event) =>{
+        event.preventDefault()
+         alert(username ,password)
     }
 
     return(
         <>
         <form onSubmit={handleclick}>
             <label htmlFor="username">username</label>
-            <input type="text" id="username" name="username"/>
+            <input type="text" id="username" name="username"value={username} onChange={(e) => setUsername(e.target.value)}/>
             <label htmlFor="password">password</label>
-            <input type="password" id="password" name="password" />
+            <input type="password" id="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} />
             <button type="submit">CLICK</button>
         </form>
         </>

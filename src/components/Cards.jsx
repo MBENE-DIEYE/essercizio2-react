@@ -1,7 +1,7 @@
-const Cards = ({Children}) =>{
+const Cards = ({children}) =>{
     return (
         <>
-        <div className="card">{Children}</div>
+        <div className="card">{children}</div>
         </>
     )
 }

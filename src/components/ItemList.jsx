@@ -5,7 +5,7 @@ const ItemList = ({array}) =>{
         <ul>
             {
                 array.map((element,index) =>{
-                    <li key={index}>{element}</li>
+                   return <li key={index}>{element}</li>
                 })
             }
         </ul>
